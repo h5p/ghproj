@@ -3,18 +3,17 @@
 entries:
   - query: |
       is:open
-      -project:suzuki-shunsuke/5
+      -project:h5p/6
       archived:false
-      owner:suzuki-shunsuke
-      owner:aquaproj
-      owner:lintnet
+      owner:h5p
       is:public
     expr: |
       (! Item.Repo.IsFork) &&
       (Item.Title != "Dependency Dashboard") &&
       ! (Item.Repo.Name startsWith "homebrew-") &&
-      ! (Item.Repo.Name startsWith "test-")
-    project_id: PVT_kwHOAMtMJ84AQCf4
+      ! (Item.Repo.Name startsWith "test-") &&
+      ! (Item.Repo.Name startsWith "ghproj")
+    project_id: PVT_kwDOAFuLts4BOeNp
     # type: issue, pr
     # title
     # label
